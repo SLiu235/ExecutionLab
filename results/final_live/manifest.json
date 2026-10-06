@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-09-06T21:54:58.288936+00:00",
+  "config": {
+    "warmup_snapshots": 28,
+    "train_window": 24,
+    "horizon_snapshots": 3,
+    "embargo_snapshots": 1,
+    "episode_seconds": 15.0,
+    "ridge_alpha": 10.0,
+    "seed": 42,
+    "bootstrap_repetitions": 200,
+    "bootstrap_block_episodes": 4,
+    "execution": {
+      "quantity": 0.01,
+      "fee_bps": 5.0,
+      "latency_ms": 250.0,
+      "depth_fraction": 0.1,
+      "max_spread_bps": 30.0,
+      "max_slippage_bps": 20.0,
+      "max_gap_seconds": 5.0,
+      "max_age_seconds": 10.0,
+      "ac_urgency": 2.0,
+      "alpha_scale_bps": 2.0,
+      "adaptive_strength": 0.5
+    }
+  },
+  "source": "coinbase_rest",
+  "provenance": "local_capture_hashes_verified",
+  "input_path": "/Users/dexter/Desktop/Projects/Quant/ExecutionLab/data/captures/btc_verified_01/snapshots.jsonl",
+  "input_sha256": "48af6fb55c378f9616ffa278cb72de0ab50cf609ee33b259014590968aa1deac",
+  "capture_manifest_sha256": "358255dddf9e4f173905a31747362dc98950e2bbaa8477abda3c515c74eaf898",
+  "provenance_note": "source tags are declarations; inspect raw capture and its manifest",
+  "python": "3.14.6",
+  "numpy": "2.5.1",
+  "source_hashes": {
+    "execution_lab/__init__.py": "8509c56b0bd6021faf9b19a8e8359172ffac144ac4c228c0422efdfd4b9495ec",
+    "execution_lab/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "execution_lab/cli.py": "8e36bce3a5a320876a3816a431513325f86c34722686b03eee9d97f5413117d3",
+    "execution_lab/data.py": "7ab7cf536b2310b4bacfe71af32f162697a89ff0c7012bd950b0cfff85ae482e",
+    "execution_lab/features.py": "f3eec185fd9a73aee9b931200c80a23eb9c3fd5c55e1a6e53ee984b422b39a3e",
+    "execution_lab/model.py": "ceb9e54d4c15fb55bb0742e2ef01717647ea6a3ff7f948cffe3d04b9cf04bb7d",
+    "execution_lab/pretrade.py": "2ded57c49aee002b4e403e9cd5991334796c56fdd3c0d0a4428087c6ef2d18d6",
+    "execution_lab/research.py": "0afc3892e1b903c2349421aab2e7122827a6a2cacc7e8f19e52b4d10cfd1b6b9",
+    "execution_lab/simulator.py": "db5c36f6536681656f0df4b36a781c812cc8f7ee485e2c905ad5574f1fe06ce8",
+    "execution_lab/synthetic.py": "5f80dfe58abb5be51da831cb3a2f0f3584199c7e1cc836c9444cf7b9e235b640"
+  },
+  "artifact_hashes": {
+    "REPORT.md": "ed7584e4840f41cd106f41a29d0bd613db98a092c2b65c0316611186c563d8d4",
+    "decisions.csv": "a544a2cefff2dac4f102a0f728fb7bd7beb3b71a2e94b5ca14fe3121e94d9c31",
+    "fills.csv": "f23c0eff9c9fda3c19a1680a9f777ee62368853f45c9d2430c5dc82034381537",
+    "forecasts.csv": "8ffeb7f5f6db9386fd5545e7fe740d1633920aff4db7b02a2cb9af02c536041b",
+    "models.json": "d31ebe78e75967a7962a9e2e7e4b974514e948f548dba1445a537da8c33a8ad0",
+    "parents.csv": "f1a906635bbcb3e2e4e06c76d6304de35f35ed26923022c82c94fee33b36d2a9",
+    "summary.json": "0cac22ded2087b162e2da145f48e10dd49366a86db7f234050e5dbf2b56eb411"
+  }
+}

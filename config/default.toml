@@ -1,0 +1,22 @@
+warmup_snapshots = 300
+train_window = 240
+horizon_snapshots = 3
+embargo_snapshots = 1
+episode_seconds = 30.0
+ridge_alpha = 10.0
+seed = 42
+bootstrap_repetitions = 1000
+bootstrap_block_episodes = 4
+
+[execution]
+quantity = 0.10
+fee_bps = 5.0
+latency_ms = 250.0
+depth_fraction = 0.10
+max_spread_bps = 30.0
+max_slippage_bps = 20.0
+max_gap_seconds = 5.0
+max_age_seconds = 10.0
+ac_urgency = 2.0
+alpha_scale_bps = 2.0
+adaptive_strength = 0.5

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant-execution-lab"
+version = "0.1.0"
+description = "Auditable order-book capture, execution replay, and transaction-cost research"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.scripts]
+execution-lab = "execution_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["execution_lab*"]

@@ -1,0 +1,14 @@
+# Small adapter/replay smoke check; not a statistically meaningful market sample.
+warmup_snapshots = 28
+train_window = 24
+horizon_snapshots = 3
+embargo_snapshots = 1
+episode_seconds = 15.0
+ridge_alpha = 10.0
+bootstrap_repetitions = 200
+
+[execution]
+quantity = 0.01
+fee_bps = 5.0
+latency_ms = 250.0
+depth_fraction = 0.10

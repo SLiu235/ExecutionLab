@@ -1,0 +1,76 @@
+{
+  "policies": [
+    {
+      "policy": "immediate",
+      "parents": 96,
+      "completion_rate": 1.0,
+      "mean_fill_rate": 1.0,
+      "mean_marked_shortfall_bps": 5.973122775025634,
+      "p95_marked_shortfall_bps": 6.767525975715444,
+      "mean_depth_bps": 0.7048928576056834,
+      "mean_fees_bps": 5.0000526752264465,
+      "guard_rejections": 0
+    },
+    {
+      "policy": "twap",
+      "parents": 96,
+      "completion_rate": 1.0,
+      "mean_fill_rate": 1.0,
+      "mean_marked_shortfall_bps": 5.209934513270686,
+      "p95_marked_shortfall_bps": 8.055478914907988,
+      "mean_depth_bps": 0.01270808202133123,
+      "mean_fees_bps": 5.000348841243644,
+      "guard_rejections": 0
+    },
+    {
+      "policy": "ac_schedule",
+      "parents": 96,
+      "completion_rate": 1.0,
+      "mean_fill_rate": 1.0,
+      "mean_marked_shortfall_bps": 5.2190879523897,
+      "p95_marked_shortfall_bps": 7.582973341473569,
+      "mean_depth_bps": 0.02248465641257383,
+      "mean_fees_bps": 5.000280123331135,
+      "guard_rejections": 0
+    },
+    {
+      "policy": "adaptive",
+      "parents": 96,
+      "completion_rate": 1.0,
+      "mean_fill_rate": 1.0,
+      "mean_marked_shortfall_bps": 5.203542850221506,
+      "p95_marked_shortfall_bps": 8.045426776521435,
+      "mean_depth_bps": 0.013260738797786704,
+      "mean_fees_bps": 5.000349140323785,
+      "guard_rejections": 0
+    }
+  ],
+  "adaptive_vs_twap": {
+    "time_blocks": 48,
+    "mean_delta_bps": -0.006391663049179347,
+    "ci95_bps": [
+      -0.009110241165066375,
+      -0.00455522567379312
+    ],
+    "interpretation": "exploratory paired moving-block bootstrap; one session is not market validation",
+    "excluded_incomplete_time_blocks": 0,
+    "delta_definition": "adaptive minus TWAP; negative favors adaptive; both sides completed"
+  },
+  "forecast": {
+    "samples": 48,
+    "ridge_rmse_bps": 0.6357286702011055,
+    "zero_rmse_bps": 0.697397298981611,
+    "r2_vs_zero": 0.16903434627530622
+  },
+  "data": {
+    "source": "synthetic",
+    "provenance": "synthetic_fixture",
+    "product": "BTC-USD",
+    "snapshots": 1800,
+    "span_seconds": 1799.0,
+    "median_interval_seconds": 1.0,
+    "max_interval_seconds": 1.0,
+    "input_sha256": "dd50732690cc36d250c83dacf643042a73c821de6fc66f26620ff4e86ff38190"
+  },
+  "episodes": 48
+}

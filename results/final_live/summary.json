@@ -1,0 +1,73 @@
+{
+  "policies": [
+    {
+      "policy": "immediate",
+      "parents": 14,
+      "completion_rate": 1.0,
+      "mean_fill_rate": 1.0,
+      "mean_marked_shortfall_bps": 5.117012076203545,
+      "p95_marked_shortfall_bps": 5.5275262640316996,
+      "mean_depth_bps": 0.11642912226082044,
+      "mean_fees_bps": 4.999958076665308,
+      "guard_rejections": 0
+    },
+    {
+      "policy": "twap",
+      "parents": 14,
+      "completion_rate": 1.0,
+      "mean_fill_rate": 1.0,
+      "mean_marked_shortfall_bps": 5.077044688526249,
+      "p95_marked_shortfall_bps": 6.087388749956155,
+      "mean_depth_bps": 0.07660814093907206,
+      "mean_fees_bps": 4.999811670309812,
+      "guard_rejections": 0
+    },
+    {
+      "policy": "ac_schedule",
+      "parents": 14,
+      "completion_rate": 1.0,
+      "mean_fill_rate": 1.0,
+      "mean_marked_shortfall_bps": 5.072540030258463,
+      "p95_marked_shortfall_bps": 5.837163411168136,
+      "mean_depth_bps": 0.07206133875128404,
+      "mean_fees_bps": 4.999853814229877,
+      "guard_rejections": 0
+    },
+    {
+      "policy": "adaptive",
+      "parents": 14,
+      "completion_rate": 1.0,
+      "mean_fill_rate": 1.0,
+      "mean_marked_shortfall_bps": 5.073893907766082,
+      "p95_marked_shortfall_bps": 6.071952282174245,
+      "mean_depth_bps": 0.07865993583323261,
+      "mean_fees_bps": 4.999811593501188,
+      "guard_rejections": 0
+    }
+  ],
+  "adaptive_vs_twap": {
+    "time_blocks": 7,
+    "mean_delta_bps": -0.0031507807601680276,
+    "ci95_bps": null,
+    "interpretation": "insufficient independent time coverage",
+    "excluded_incomplete_time_blocks": 0,
+    "delta_definition": "adaptive minus TWAP; negative favors adaptive; both sides completed"
+  },
+  "forecast": {
+    "samples": 7,
+    "ridge_rmse_bps": 0.6792295473091132,
+    "zero_rmse_bps": 0.7168466656412287,
+    "r2_vs_zero": 0.10219793291074863
+  },
+  "data": {
+    "source": "coinbase_rest",
+    "provenance": "local_capture_hashes_verified",
+    "product": "BTC-USD",
+    "snapshots": 74,
+    "span_seconds": 179.796913,
+    "median_interval_seconds": 2.514428,
+    "max_interval_seconds": 3.036861,
+    "input_sha256": "48af6fb55c378f9616ffa278cb72de0ab50cf609ee33b259014590968aa1deac"
+  },
+  "episodes": 7
+}

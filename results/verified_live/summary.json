@@ -1,0 +1,72 @@
+{
+  "policies": [
+    {
+      "policy": "immediate",
+      "parents": 14,
+      "completion_rate": 1.0,
+      "mean_fill_rate": 1.0,
+      "mean_marked_shortfall_bps": 5.117012076203545,
+      "p95_marked_shortfall_bps": 5.5275262640316996,
+      "mean_depth_bps": 0.11642912226082044,
+      "mean_fees_bps": 4.999958076665308,
+      "guard_rejections": 0
+    },
+    {
+      "policy": "twap",
+      "parents": 14,
+      "completion_rate": 0.2857142857142857,
+      "mean_fill_rate": 0.9042578305084745,
+      "mean_marked_shortfall_bps": 4.586816309547906,
+      "p95_marked_shortfall_bps": 5.870006135139298,
+      "mean_depth_bps": 0.06515728093324498,
+      "mean_fees_bps": 4.521093980544907,
+      "guard_rejections": 0
+    },
+    {
+      "policy": "ac_schedule",
+      "parents": 14,
+      "completion_rate": 0.2857142857142857,
+      "mean_fill_rate": 0.946224167240561,
+      "mean_marked_shortfall_bps": 4.796637345547951,
+      "p95_marked_shortfall_bps": 5.703719294840651,
+      "mean_depth_bps": 0.0650837075722975,
+      "mean_fees_bps": 4.73096236519456,
+      "guard_rejections": 0
+    },
+    {
+      "policy": "adaptive",
+      "parents": 14,
+      "completion_rate": 0.2857142857142857,
+      "mean_fill_rate": 0.9015166007905261,
+      "mean_marked_shortfall_bps": 4.574595812257127,
+      "p95_marked_shortfall_bps": 5.90467936591431,
+      "mean_depth_bps": 0.06726130558538594,
+      "mean_fees_bps": 4.507387272551736,
+      "guard_rejections": 0
+    }
+  ],
+  "adaptive_vs_twap": {
+    "time_blocks": 2,
+    "mean_delta_bps": 0.00353851216257417,
+    "ci95_bps": null,
+    "interpretation": "insufficient independent time coverage",
+    "excluded_incomplete_time_blocks": 5,
+    "delta_definition": "adaptive minus TWAP; negative favors adaptive; both sides completed"
+  },
+  "forecast": {
+    "samples": 7,
+    "ridge_rmse_bps": 0.6792295473091132,
+    "zero_rmse_bps": 0.7168466656412287,
+    "r2_vs_zero": 0.10219793291074863
+  },
+  "data": {
+    "source": "coinbase_rest",
+    "product": "BTC-USD",
+    "snapshots": 74,
+    "span_seconds": 179.796913,
+    "median_interval_seconds": 2.514428,
+    "max_interval_seconds": 3.036861,
+    "input_sha256": "48af6fb55c378f9616ffa278cb72de0ab50cf609ee33b259014590968aa1deac"
+  },
+  "episodes": 7
+}

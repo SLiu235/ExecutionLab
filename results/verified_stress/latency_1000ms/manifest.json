@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-09-06T21:52:16.600275+00:00",
+  "config": {
+    "warmup_snapshots": 300,
+    "train_window": 240,
+    "horizon_snapshots": 3,
+    "embargo_snapshots": 1,
+    "episode_seconds": 30,
+    "ridge_alpha": 10,
+    "seed": 42,
+    "bootstrap_repetitions": 1000,
+    "bootstrap_block_episodes": 4,
+    "execution": {
+      "quantity": 0.1,
+      "fee_bps": 5.0,
+      "latency_ms": 1000,
+      "depth_fraction": 0.1,
+      "max_spread_bps": 30.0,
+      "max_gap_seconds": 5.0,
+      "max_age_seconds": 10.0,
+      "ac_urgency": 2.0,
+      "alpha_scale_bps": 2.0,
+      "adaptive_strength": 0.5
+    }
+  },
+  "source": "synthetic",
+  "input_path": "/Users/dexter/Desktop/Projects/Quant/ExecutionLab/results/verified_demo/synthetic_snapshots.jsonl",
+  "input_sha256": "dd50732690cc36d250c83dacf643042a73c821de6fc66f26620ff4e86ff38190",
+  "capture_manifest_sha256": null,
+  "provenance_note": "source tags are declarations; inspect raw capture and its manifest",
+  "python": "3.14.6",
+  "numpy": "2.5.1",
+  "source_hashes": {
+    "execution_lab/__init__.py": "8509c56b0bd6021faf9b19a8e8359172ffac144ac4c228c0422efdfd4b9495ec",
+    "execution_lab/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "execution_lab/cli.py": "8e36bce3a5a320876a3816a431513325f86c34722686b03eee9d97f5413117d3",
+    "execution_lab/data.py": "7ab7cf536b2310b4bacfe71af32f162697a89ff0c7012bd950b0cfff85ae482e",
+    "execution_lab/features.py": "f3eec185fd9a73aee9b931200c80a23eb9c3fd5c55e1a6e53ee984b422b39a3e",
+    "execution_lab/model.py": "ceb9e54d4c15fb55bb0742e2ef01717647ea6a3ff7f948cffe3d04b9cf04bb7d",
+    "execution_lab/pretrade.py": "170907baee266f025e9b7a3f6705bf3e79410e2e71a1112fa6f16564ceea12e0",
+    "execution_lab/research.py": "89be1038e4ade9f5a7a12ff5bdf4b599afb35c9c8aeecb4b04c6c1eb5ac329e8",
+    "execution_lab/simulator.py": "7510a3ecb069a4e7d0a927f05cabddbaa90a900e768c09ffef5818fd72caea6d",
+    "execution_lab/synthetic.py": "5f80dfe58abb5be51da831cb3a2f0f3584199c7e1cc836c9444cf7b9e235b640"
+  },
+  "artifact_hashes": {
+    "REPORT.md": "dce84d4f8b559357b255d5db9c711be969f77e289e5a59d2cda8b9ca07abd08d",
+    "decisions.csv": "2a7e2be6958ce5c8f44eadc94951592546b1ec7082668c73098d171530669e61",
+    "fills.csv": "3851cdf0fcd0e4ae18039e2dc674b78892d22ebb913ddde5bb58980ce619f0d2",
+    "forecasts.csv": "5e823380d6d6814e78989f2155e05503ff60cbf84764425a19d3e4bca4bb42b7",
+    "models.json": "7b3c56db7999627f9caeef149c4c90a4db06f801bee0804d8e3b06a141a09624",
+    "parents.csv": "d3fb5bb33474435babff0d969d31d63cec17920a6d54ba070b682492fdb21830",
+    "summary.json": "acc332630f454f7c5d3d4945fb29a6a25fcdf247df2ad5e26c8d8379d7fd394c"
+  }
+}
